@@ -1,0 +1,16 @@
+Project: Consumer Credit Default Prediction
+-----------------------------------------
+Dataset Metadata:
+- Total Samples: 50,000 rows
+- Total Features: 22 (demographics, credit history, income, loan amount, etc.)
+- Target: Binary (1: Defaulted, 0: Paid back)
+
+Current Model Configuration:
+- Algorithm: XGBoost (Learning rate: 0.05, Max depth: 6)
+- Validation: Stratified 5-Fold Cross-Validation
+
+Known Data Issues:
+- Class Imbalance: Approximately 20% of users defaulted (1:4 ratio).
+- Missing Values: 5% missing data in 'Annual_Income' and 'Employment_Duration'.
+- Feature Scale: Features like 'Annual_Income' and 'Age' have very different scales.
+- Multicollinearity: 'Loan_Amount' and 'Monthly_Payment' are strongly correlated.

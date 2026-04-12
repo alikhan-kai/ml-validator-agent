@@ -1,0 +1,4 @@
+.env
+__pycache__/
+*.json
+!final_report.json
