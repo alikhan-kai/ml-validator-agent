@@ -25,9 +25,25 @@ The system follows a sequential pipeline defined in `graph.py`:
 - **Tracing**: LangSmith
 - **Environment**: Python 3.14+
 
-## Sample Output (LangSmith Tracing)
+## LangSmith Observability Evidence
 
-*Place your screenshot here to prove tracing works!*
+We use **LangSmith** for deep monitoring and tracing of our Agent's reasoning path. Below is the evidence of successful execution.
+
+### 1. Agentic Reasoning Flow (The Waterfall)
+*This crucial view proves the implementation of 3 distinct functional nodes (`ingest_data`, `analyze_risks`, `generate_strategy`), fulfilling assignment requirements.*
+
+![LangSmith Trace Waterfall](screenshots/2.png)
+*(Note: If screenshots/2.png is not the waterfall view, replace '2.png' with the correct number).*
+
+### 2. Execution History
+*A log of multiple successful runs validating different ML project scenarios.*
+
+![Execution History](screenshots/1.png)
+
+### 3. Pipeline Statistics (Debugging Phase)
+*Overall statistics showing latency and tokens. The error rate reflects the initial debugging phase where we fine-tuned prompts and Pydantic schemas.*
+
+![Overall Statistics](screenshots/4.png)
 
 ## Setup & Execution
 
